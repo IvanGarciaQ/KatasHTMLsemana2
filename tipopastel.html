@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de producto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="ingreso.html">Tu cuenta</a></li>
+                    <li><a href="registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+            <section class="contenedor-inferior">
+                <div>
+                    <ul>
+                        <li><img src="img/logo.png" alt="Logotipo" width="350"></li>
+                        <li>Visitanos, nos ubicamos en la siguiente direccion: Av. Corozo 115, Vista Hermosa</li>
+                        <li><input type="text"><img src="img/lupa.png" alt="busqueda" width="20"></li>
+                        <li><a href="#"><img src="img/carrito_compras.png" alt="carrito de compras" width="40"></a></li>
+                        <label for="contador">0</label>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <section class="main">
+            <div>
+                <div>
+                    <ul>
+                        <li><img src="img/pastel_3leches/pastel_3leches.jpg" alt="3 leches 1" width="250"></li>
+                        <li><img src="img/pastel_3leches/pastel_3leches2.jpg" alt="3 leches 2" width="250"></li>
+                        <li><img src="img/pastel_3leches/pastel_3leches3.jpg" alt="3 leches 3" width="250"></li>
+                    </ul>
+                    <span>Comparte</span>
+                    <ul>
+                        <li><a href="#"><img src="img/iconofacebook.png" alt="icono facebook" width="20"></a></li>
+                        <li><a href="#"><img src="img/iconoinstagram.png" alt="iconoinstagram" width="20"></a></li>
+                        <li><a href="#"><img src="img/iconotwitter.png" alt="icono twitter" width="20"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Tipo de pastel</h1>
+                    <span>Disponibilidad: Valor</span><br>
+                    <span>Precio: $0.00 M.N.</span><br>
+                    <span>Tamaño: valor</span><br>
+                    <input type="button" name="boton1" value="Grande">
+                    <input type="button" name="boton2" value="Mediano">
+                    <input type="button" name="boton3" value="Chico" onclick=""><br>
+                    <input type="button" name="boton4" value="+">
+                    <input type="text" value="0">
+                    <input type="button" name="boton5" value="-">
+                    <input type="button" name="boton6" value="Agregar al carrito"><br>
+                    <a href="#">¿Te gustaria adornarlo?</a><br>
+                    <a href="#">¿Te gustaria personalizarlo?</a>
+                </div>
+                <div>
+                    <p>
+                        Esponjoso pan de vainilla relleno de duraznos, perfectamente bañado con una dulce mezcla de leches y decorado con crema batida, trazos de chocolate y láminas de almendra tostada. ¡Infalible en los cumpleaños!
+                    </p>
+                    <span>Contiene almendra, durazno, chocolate, lácteos, huevo y gluten/trigo.</span><br>
+                    <span>28, 18 y 8 rebanadas</span>
+                </div>
+            </div>
+        </section><br>
+
+        <footer>
+            <section>
+                <div>
+                    <div>
+                        <img src="img/logo.png" alt="Logotipo" width="300">
+                    </div>
+                    <div>
+                        <p>Recibe promociones y descuentos en tu correo</p>
+                        <input type="text" name="correo">
+                        <input type="button" name="boton" value="INSCRIBIRSE">
+                    </div>
+                    <div>
+                        <p>Escribenos</p>
+                        <p>tuxtla@pasteleriatuxtleca.com</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><img src="img/iconofacebook.png" alt="icono facebook" width="30"></li>
+                            <li><img src="img/iconoinstagram.png" alt="icono instagram" width="30"></li>
+                            <li><img src="img/iconotwitter.png" alt="icono twitter" width="30"></li>
+                            <li><img src="img/iconoyoutube.png" alt="icono youtube" width="30"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Informacion importante</h3>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                            <li><a href="#">Aviso de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <p>Pastelerías la Tuxtleca © 2022 Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

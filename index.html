@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web pasteleria</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <nav>
+                <ul>
+                    <a href="">WhatsApp</a>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="">Como comprar</a></li>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="ingreso.html">Tu cuenta</a></li>
+                    <li><a href="registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+            <section class="contenedor-inferior">
+                <div>
+                    <ul>
+                        <li><img src="img/logo.png" alt="Logotipo" width="350"></li>
+                        <li><p>Visitanos, nos ubicamos en la siguiente direccion: Av. Insurgentes sur, CDMX</p></li>
+                        <li><input type="text"><img src="img/lupa.png" alt="busqueda" width="20"></li>
+                        <li><img src="img/carrito_compras.png" alt="carrito de compras" width="40"></li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <section class="main">
+        
+            <div align="center">
+                
+              <img src="img/pasteleria.jpg" alt="feliz cumpleaños" width="700" height="300"  >
+            
+            </div>
+            
+        </section>
+
+        <footer>
+            <section>
+                <div>
+                    <div>
+                        <img src="img/logo.png" alt="Logotipo" width="300">
+                    </div>
+                    <div>
+                        <p>Recibe promociones y descuentos en tu correo</p>
+                        <input type="text" name="correo">
+                        <input type="button" name="boton" value="INSCRIBIRSE">
+                    </div>
+                    <div>
+                        <p>Escribenos</p>
+                        <p>Galactica.com</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><img src="img/iconofacebook.png" alt="icono facebook" width="30"></li>
+                            <li><img src="img/iconoinstagram.png" alt="icono instagram" width="30"></li>
+                            <li><img src="img/iconotwitter.png" alt="icono twitter" width="30"></li>
+                            <li><img src="img/iconoyoutube.png" alt="icono youtube" width="30"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Informacion importante</h3>
+                        <ul>
+                            <li>Contacto</li>
+                            <li>Preguntas Frecuentes</li>
+                            <li>Terminos y condiciones</li>
+                            <li>Aviso de privacidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <p>Pastelerías Galactica © 2022 Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

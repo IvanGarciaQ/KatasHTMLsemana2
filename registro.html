@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="ingreso.html">Tu cuenta</a></li>
+                    <li><a href="registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+            <section class="contenedor-inferior">
+                <div>
+                    <ul>
+                        <li><img src="img/logo.png" alt="Logotipo" width="350"></li>
+                        <li>Visitanos, nos ubicamos en la siguiente direccion: Av. Corozo 115, Vista Hermosa</li>
+                        <li><input type="text"><img src="img/lupa.png" alt="busqueda" width="20"></li>
+                        <li><a href="#"><img src="img/carrito_compras.png" alt="carrito de compras" width="40"></a></li>
+                        <label for="contador">0</label>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <section class="main">
+            <div class="nuevacuenta">
+                <h4>Crear una cuenta</h4>
+                <form action="#" id="formulario" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre"><br>
+                    <input type="text" name="apellido" placeholder="Apellidos"><br>
+                    <input type="email" name="correo electronico" placeholder="Correo electronico"><br>
+                    <input type="password" name="contrasenia" placeholder="Contraseña"><br>
+                    <input type="checkbox" name="topping" value="inscripcion">
+                    <label for="topping">¡Inscríbete para mantenerte al tanto de nuevos productos y ofertas!</label><br>
+                    <input type="submit" name="crearcuenta" value="crear">
+                </form>
+            </div>
+        </section><br>
+
+        <footer>
+            <section>
+                <div>
+                    <div>
+                        <img src="img/logo.png" alt="Logotipo" width="300">
+                    </div>
+                    <div>
+                        <p>Recibe promociones y descuentos en tu correo</p>
+                        <input type="text" name="correo">
+                        <input type="button" name="boton" value="INSCRIBIRSE">
+                    </div>
+                    <div>
+                        <p>Escribenos</p>
+                        <p>tuxtla@pasteleriatuxtleca.com</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><img src="img/iconofacebook.png" alt="icono facebook" width="30"></li>
+                            <li><img src="img/iconoinstagram.png" alt="icono instagram" width="30"></li>
+                            <li><img src="img/iconotwitter.png" alt="icono twitter" width="30"></li>
+                            <li><img src="img/iconoyoutube.png" alt="icono youtube" width="30"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Informacion importante</h3>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                            <li><a href="#">Aviso de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <p>Pastelerías la Tuxtleca © 2022 Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
